@@ -13,11 +13,13 @@
 
 TEST_CASE("Ex1", "[example]")
 {
-    REQUIRE(areOdd(2021, 0) == 1);
-    REQUIRE(areOdd(2020, -3) == 1);
-    REQUIRE(areOdd(20, 2) == 0);
-    REQUIRE(areOdd(-2021, -3) == 1);
-    REQUIRE(areOdd(-5, 0) == 1);
-    REQUIRE(areOdd(6, -8) == 0);
+    REQUIRE(isAlphabetical("alex", "bob") == 1);
+    REQUIRE(isAlphabetical("alex", "Bob") == 1);
+    REQUIRE(isAlphabetical("alex", "alexander") == 1);
+    REQUIRE(isAlphabetical("alex", "ALEX") == 1);
+    REQUIRE(isAlphabetical("Bob", "bob") == 1);
+    REQUIRE(isAlphabetical("Bob", "alexa") == 0);
+    REQUIRE(isAlphabetical("bob", "Alexa") == 0);
+
 }
 

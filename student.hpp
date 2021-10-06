@@ -8,7 +8,7 @@ using namespace std;
 // implementations
 
 //Exercise
-bool areOdd(int a, int b)
+bool isAlphabetical(string nameOne, string nameTwo)
 {
 	return 0; // TODO: fix
 }
