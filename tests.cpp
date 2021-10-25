@@ -14,12 +14,12 @@
 TEST_CASE("Ex1", "[example]")
 {
     REQUIRE(isAlphabetical("alex", "bob") == 1);
-    REQUIRE(isAlphabetical("alex", "Bob") == 1);
+    REQUIRE(isAlphabetical("Alex", "Bob") == 1);
     REQUIRE(isAlphabetical("alex", "alexander") == 1);
-    REQUIRE(isAlphabetical("alex", "ALEX") == 1);
-    REQUIRE(isAlphabetical("Bob", "bob") == 1);
-    REQUIRE(isAlphabetical("Bob", "alexa") == 0);
-    REQUIRE(isAlphabetical("bob", "Alexa") == 0);
+    REQUIRE(isAlphabetical("alex", "alex") == 1);
+    REQUIRE(isAlphabetical("Bob", "Bob") == 1);
+    REQUIRE(isAlphabetical("bob", "alexa") == 0);
+    REQUIRE(isAlphabetical("zena", "alexa") == 0);
 
 }
 
