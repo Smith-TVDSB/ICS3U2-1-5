@@ -20,8 +20,8 @@ TEST_CASE("Ex1", "[example]")
     REQUIRE(isAlphabetical("Bob", "Bob") == 1);
     REQUIRE(isAlphabetical("bob", "alexa") == 0);
     REQUIRE(isAlphabetical("zena", "alexa") == 0);
-    REQUIRE(isAlphabetical("aaron", "azuma") == 0);
-    REQUIRE(isAlphabetical("azuma", "aaron") == 1);
+    REQUIRE(isAlphabetical("aaron", "azuma") == 1);
+    REQUIRE(isAlphabetical("azuma", "aaron") == 0);
 
 }
 
