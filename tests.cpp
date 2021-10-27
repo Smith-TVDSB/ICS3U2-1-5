@@ -18,10 +18,10 @@ TEST_CASE("Ex1", "[example]")
     REQUIRE(isAlphabetical("alex", "alexander") == true );
     REQUIRE(isAlphabetical("alex", "alex") == true);
     REQUIRE(isAlphabetical("Bob", "Bob") == true);
-    REQUIRE(isAlphabetical("bob", "alexa") == false);
-    REQUIRE(isAlphabetical("zena", "alexa") == false);
-    REQUIRE(isAlphabetical("aaron", "azuma") == true);
-    REQUIRE(isAlphabetical("azuma", "aaron") == false);
+    REQUIRE(isAlphabetical("bob  ", "alexa") == false);
+    REQUIRE(isAlphabetical("zena ", "alexa") == false);
+    REQUIRE(isAlphabetical("aaron", "azula") == true);
+    REQUIRE(isAlphabetical("azula", "aaron") == false);
 
 }
 
