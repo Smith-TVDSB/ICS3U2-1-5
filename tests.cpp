@@ -15,7 +15,7 @@ TEST_CASE("Ex1", "[example]")
 {
     REQUIRE(isAlphabetical("alex", "bob") == true );
     REQUIRE(isAlphabetical("Alex", "Bob") == true);
-    REQUIRE(isAlphabetical("alex     ", "alexander") == false );
+    REQUIRE(isAlphabetical("alex     ", "alexander") == true );
     REQUIRE(isAlphabetical("alex", "alex") == true);
     REQUIRE(isAlphabetical("Bob", "Bob") == true);
     REQUIRE(isAlphabetical("bob  ", "alexa") == false);
